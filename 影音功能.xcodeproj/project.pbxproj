@@ -12,6 +12,7 @@
 		51E477511ED8678F00690DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E4774F1ED8678F00690DAF /* Main.storyboard */; };
 		51E477531ED8678F00690DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E477521ED8678F00690DAF /* Assets.xcassets */; };
 		51E477561ED8678F00690DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E477541ED8678F00690DAF /* LaunchScreen.storyboard */; };
+		51F8C5A41ED89697001B24A7 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F8C5A31ED89697001B24A7 /* Page2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		51E477521ED8678F00690DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51E477551ED8678F00690DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51E477571ED8678F00690DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51F8C5A31ED89697001B24A7 /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		51E4774A1ED8678F00690DAF /* 影音功能 */ = {
 			isa = PBXGroup;
 			children = (
+				51F8C5A31ED89697001B24A7 /* Page2ViewController.swift */,
 				51E4774B1ED8678F00690DAF /* AppDelegate.swift */,
 				51E4774D1ED8678F00690DAF /* ViewController.swift */,
 				51E4774F1ED8678F00690DAF /* Main.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51E4774E1ED8678F00690DAF /* ViewController.swift in Sources */,
+				51F8C5A41ED89697001B24A7 /* Page2ViewController.swift in Sources */,
 				51E4774C1ED8678F00690DAF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				51E4775C1ED8678F00690DAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
