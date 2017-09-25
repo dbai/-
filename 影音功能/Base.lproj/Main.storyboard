@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rb-mD-8b9">
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkW-il-AVQ">
-                                <rect key="frame" x="596" y="30" width="82" height="36"/>
+                                <rect key="frame" x="242" y="30" width="82" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="拍攝照片"/>
                                 <connections>
@@ -40,13 +40,13 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="riI-Aq-SNY">
-                                <rect key="frame" x="50" y="98" width="668" height="685.5"/>
+                                <rect key="frame" x="50" y="98.000000000000028" width="314" height="322.66666666666674"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="riI-Aq-SNY" secondAttribute="height" multiplier="39:40" id="Sye-bW-gO3"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDs-Tu-m3A">
-                                <rect key="frame" x="353" y="824" width="62" height="47"/>
+                                <rect key="frame" x="176" y="536" width="62" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="yHi-Ov-o79"/>
                                 </constraints>
@@ -71,6 +71,7 @@
                             <constraint firstItem="9Rb-mD-8b9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="pOD-m1-FQE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0OJ-GM-Prc"/>
                     <connections>
                         <outlet property="圖片框" destination="riI-Aq-SNY" id="YCS-en-BA4"/>
                         <outlet property="拍照按鈕" destination="ZkW-il-AVQ" id="XVN-Yg-kgf"/>
@@ -79,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67.96875" y="140.99560761346999"/>
+            <point key="canvasLocation" x="233.59375" y="140.625"/>
         </scene>
         <!--Page2 View Controller-->
         <scene sceneID="o5X-K8-JDb">
@@ -90,32 +91,33 @@
                         <viewControllerLayoutGuide type="bottom" id="VqA-Zu-ZcU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W9a-1C-fVq">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YE-Bs-rUm">
-                                <rect key="frame" x="20" y="28" width="728" height="796"/>
+                                <rect key="frame" x="20" y="28" width="374" height="508"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="508" id="Ree-WZ-MBt"/>
+                                </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQf-4c-Oij">
-                                <rect key="frame" x="353" y="938" width="62" height="36"/>
+                                <rect key="frame" x="176" y="650" width="62" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="回上頁"/>
                                 <connections>
                                     <action selector="按回上頁:" destination="bcn-Lr-5Sa" eventType="touchUpInside" id="zkK-gm-Rc4"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toPage1" id="pW7-nR-O6K"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="eSC-AQ-9LU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VqA-Zu-ZcU" firstAttribute="top" secondItem="GQf-4c-Oij" secondAttribute="bottom" constant="50" id="B6k-23-JBI"/>
-                            <constraint firstItem="3YE-Bs-rUm" firstAttribute="top" secondItem="GfQ-KP-h1P" secondAttribute="bottom" constant="8" symbolic="YES" id="ReW-U4-qG3"/>
-                            <constraint firstItem="VqA-Zu-ZcU" firstAttribute="top" secondItem="3YE-Bs-rUm" secondAttribute="bottom" constant="200" id="WhR-sf-04h"/>
-                            <constraint firstItem="3YE-Bs-rUm" firstAttribute="leading" secondItem="W9a-1C-fVq" secondAttribute="leading" constant="20" symbolic="YES" id="ZEF-Un-C7H"/>
-                            <constraint firstAttribute="trailing" secondItem="3YE-Bs-rUm" secondAttribute="trailing" constant="20" symbolic="YES" id="fKv-tX-Xrc"/>
-                            <constraint firstItem="GQf-4c-Oij" firstAttribute="top" secondItem="GfQ-KP-h1P" secondAttribute="bottom" constant="1064" id="gi0-iB-B5g"/>
-                            <constraint firstItem="GQf-4c-Oij" firstAttribute="centerX" secondItem="W9a-1C-fVq" secondAttribute="centerX" id="lZq-5i-w5z"/>
+                            <constraint firstItem="3YE-Bs-rUm" firstAttribute="leading" secondItem="W9a-1C-fVq" secondAttribute="leadingMargin" id="Dqo-jE-CTk"/>
+                            <constraint firstItem="3YE-Bs-rUm" firstAttribute="top" secondItem="GfQ-KP-h1P" secondAttribute="bottom" constant="8" symbolic="YES" id="Ump-T9-5SD"/>
+                            <constraint firstItem="VqA-Zu-ZcU" firstAttribute="top" secondItem="GQf-4c-Oij" secondAttribute="bottom" constant="50" id="i87-R6-oMH"/>
+                            <constraint firstItem="3YE-Bs-rUm" firstAttribute="centerX" secondItem="GQf-4c-Oij" secondAttribute="centerX" id="moj-cl-W3p"/>
+                            <constraint firstItem="3YE-Bs-rUm" firstAttribute="trailing" secondItem="W9a-1C-fVq" secondAttribute="trailingMargin" id="yZH-53-HYI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -124,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLA-cX-kGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757.6171875" y="140.99560761346999"/>
+            <point key="canvasLocation" x="922.65625" y="140.625"/>
         </scene>
     </scenes>
 </document>

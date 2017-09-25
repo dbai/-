@@ -50,7 +50,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         selectImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        UIImageWriteToSavedPhotosAlbum(selectImage, nil, nil, nil)
+//        UIImageWriteToSavedPhotosAlbum(selectImage, nil, nil, nil)
         圖片框.image = selectImage
         picker.dismiss(animated: true, completion: nil)
     }
